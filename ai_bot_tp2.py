@@ -51,7 +51,7 @@ def wishMe():
     else:
         speak("Good Night sir!")
 
-    speak("Jarvis at your Service. WHAT DO YOU WANT TO DO NOW ")
+    speak("WHAT DO YOU WANT TO DO")
 #wishMe()
 def takeCommand():
 
@@ -121,8 +121,8 @@ if __name__ == "__main__":
                 print("done")
             try:
                 text = r.recognize_google(audio)
-                print('google think you said:\n' +text +'.com')
-                wb.get(chrome_path).open(text+'.com')
+                print('google think you said:\n' +text)
+                wb.get(chrome_path).open(text)
             except Exception as e:
                 print(e)
         
